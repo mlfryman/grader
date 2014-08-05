@@ -9,7 +9,8 @@ Grader is a Node.js application to be used in an education context. It allows te
 
 ### Models
 ```
-
+Student
+  
 ```
 ### Features
 - Object Oriented
