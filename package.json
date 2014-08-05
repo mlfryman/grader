@@ -4,7 +4,7 @@
   "description": "Grader is a Node.js application to be used in an education context. It allows teachers to keep track of their students' grades.",
   "main": "app/index.js",
   "scripts": {
-    "test": "mocha test --recusrive -R spec"
+    "test": "mocha test --recursive -R spec"
   },
   "repository": {
     "type": "git",
