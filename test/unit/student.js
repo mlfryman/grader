@@ -48,7 +48,7 @@ describe('Student', function(){
       expect(wesley._isSuspended).to.be.false;
       expect(wesley._isHonor).to.be.false;
       expect(wesley.tests).to.have.length(0);
-      expect(wesley.testsFail).to.be.equal(0);
+      expect(wesley.fails).to.be.equal(0);
     });
   });
 
@@ -83,6 +83,20 @@ describe('Student', function(){
       });
     });
   });
+
+  describe('#addTest', function(){
+    it('should add a new test to student\'s test array', function(){
+      var o = {name:'Wesley Crusher', color:'pink'};
+      var wesley = new Student(o);
+      
+      wesley.addTest();
+
+      expect(wesley.tests).to.have.length(1);
+      expect(wesley._isSuspended).to.be.false;
+    });
+  });
+
+
 
 
 });

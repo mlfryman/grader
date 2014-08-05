@@ -10,7 +10,7 @@ function Student(o){
   this._isSuspended = false;
   this._isHonor = false;
   this.tests = [];
-  this.testsFail = 0;
+  this.fails = 0;
 }
 
 Object.defineProperty(Student, 'collection', {
@@ -46,6 +46,17 @@ Student.deleteById = function(id, cb){
 
   Student.collection.findAndRemove({_id:_id}, cb);
 };
+
+Student.prototype.addTest = function(student){
+  if(this._isSuspended){return 0;}
+
+  if(student.fails >= 3 && !student._isSuspended){
+    student._isSuspended = true;
+    this.fails++;
+  }
+};
+
+
 
 module.exports = Student;
 
