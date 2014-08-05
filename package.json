@@ -1,0 +1,39 @@
+{
+  "name": "grader",
+  "version": "0.0.0",
+  "description": "Grader is a Node.js application to be used in an education context. It allows teachers to keep track of their students' grades.",
+  "main": "app/index.js",
+  "scripts": {
+    "test": "mocha test --recusrive -R spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mlfryman/grader"
+  },
+  "author": "Melanie Fryman <melanie@frymanet.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mlfryman/grader/issues"
+  },
+  "homepage": "https://github.com/mlfryman/grader",
+  "dependencies": {
+    "body-parser": "^1.5.2",
+    "express": "^4.7.4",
+    "jade": "^1.5.0",
+    "lodash": "^2.4.1",
+    "mongodb": "^1.4.8",
+    "morgan": "^1.2.2",
+    "supervisor": "^0.6.0"
+  },
+  "devDependencies": {
+    "blanket": "^1.1.6",
+    "chai": "^1.9.1",
+    "coveralls": "^2.11.1",
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "jshint-stylish": "^0.4.0",
+    "mocha": "^1.21.3",
+    "mocha-lcov-reporter": "0.0.1"
+  }
+}
