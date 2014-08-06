@@ -3,7 +3,7 @@
 var Student = require('../models/student');
 
 exports.index = function(req, res){
-  Student.find(function(students){
+  Student.findAll(function(students){
     console.log(students);
     res.render('students/index', {students:students});
   });

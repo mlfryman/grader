@@ -19,7 +19,7 @@ module.exports = function(app, express){
 
   app.get('/students/new', students.init);
   app.post('/students/new', students.create);
-  app.get('/students/index', students.index);
+  app.get('/students', students.index);
   app.get('/students/:id', students.show);
   app.get('/students/:id/test', students.init);
   app.post('/students/:id/test', students.update);

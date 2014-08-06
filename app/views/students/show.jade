@@ -12,7 +12,7 @@ extents content
         td= student.letter()
       tr
         td Suspended
-        td= student._suspended.suspended
+        td= student._isSuspended.suspended
       tr
         td Honor Roll
         td= student._honorRoll.honor
@@ -22,4 +22,4 @@ extents content
             button Add Test
   #test
     each test in student.tests
-   .testscore(style='height:#{test}px;background-color:#{student.gradeColor(test)};')
+   .testscore(style='height:#{test}px;background-color:#{student.getColor(test)};')

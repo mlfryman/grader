@@ -16,8 +16,8 @@ block content
         tr
           td(style='background-color:#{student.color}')
             a(href='/students/#{student._id}')= student.name
-          td(style='background-color:#{student.avgColor()};')= student.avg().toFixed(1)
-          td(style='background-color:#{student.avgColor()};')= student.letter()
-          td(style='background-color:#{student._suspended.color}')= student._suspended.suspended
+          td(style='background-color:#{student.avgColor};')= student.avg().toFixed(1)
+          td(style='background-color:#{student.avgColor)};')= student.letter()
+          td(style='background-color:#{student._isSuspended.color}')= student._isSuspended.suspended
           td(style='background-color:#{student._honorRoll.color}')= student._honorRoll.honor
 

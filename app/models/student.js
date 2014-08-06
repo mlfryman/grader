@@ -6,12 +6,13 @@ var Mongo = require('mongodb');
 function Student(o){
   this.name = o.name;
   this.color = o.color;
+  this.avgColor = 'red';
   this.tests = [];
 
   this._isSuspended = {suspended:'no', color:'green'};
   this._honorRoll = {honor:'no', color:'red'};
 }
-
+// this is a getter (Student.collection) is alias for mongodb
 Object.defineProperty(Student, 'collection', {
   get: function(){return global.mongodb.collection('students');}
 });
@@ -24,6 +25,7 @@ Student.prototype.avg = function(){
     sum += parseInt(this.tests[i]);
     this.avg = (sum/this.tests.length).toFixed(2);
   }
+    if(sum > 95) {this.avgColor = 'green';}
   return this.avg;
 };
 
