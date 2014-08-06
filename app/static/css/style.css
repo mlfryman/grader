@@ -1,0 +1,57 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Sans);
+
+body, html {
+  margin: 0;
+  font-family: 'PT Sans', 'sans-serif';
+}
+
+nav {
+  margin: 0px auto;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a{
+  text-decoration: none;
+  font-size: 20px;
+  padding: 20px;
+  color: black;
+}
+
+nav ul li a:hover{
+  background-color: black;
+  color: white;
+}
+
+table {
+  width: 80%;
+  font-size: 20px;
+  text-align: center;
+  margin: 0px auto;
+}
+
+table tr th {
+  padding: 10px;
+  border: 2px solid black;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  text-align: center;
+}
+
+button {
+  font-size: 1.5em;
+}

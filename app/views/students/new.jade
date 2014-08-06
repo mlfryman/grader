@@ -1,0 +1,11 @@
+extends ../shared/template
+
+block content
+
+  h1 Add a new student
+  form(method='post', action='/students/new')
+    label Name
+    input(type='text', name='name', placeholder='e.g. Bob')
+    label Color
+    input(type='color', name='color')
+    button Submit
