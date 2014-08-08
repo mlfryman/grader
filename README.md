@@ -9,37 +9,7 @@ Grader is a Node.js application to be used in an education context. It allows te
 
 ### Models
 ```
-Priority
-------------
-name
-color
-value
-------------
--.collection
-------------
-#save
-------------
-.all
-.findById
-  
-```
-```
-Task
-------------
-name
-due
-photo
-.isComplete
-tags
-priorityID
-------------
--.collection
-------------
-#save
-------------
-.all
-.findById
-  
+Student
 ```
 ### Features
 - Object Oriented
