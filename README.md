@@ -9,17 +9,49 @@ Grader is a Node.js application to be used in an education context. It allows te
 
 ### Models
 ```
-Student
+Priority
+------------
+name
+color
+value
+------------
+-.collection
+------------
+#save
+------------
+.all
+.findById
+  
+```
+```
+Task
+------------
+name
+due
+photo
+.isComplete
+tags
+priorityID
+------------
+-.collection
+------------
+#save
+------------
+.all
+.findById
   
 ```
 ### Features
 - Object Oriented
+- MVC
 - TDD
 - Mocha
 - MongoDB
+- Jade
+- Express
 
 ### Running Tests
-```bash
+```
 $ npm install
 $ npm test
 ```
@@ -27,4 +59,4 @@ $ npm test
 - [Melanie Fryman](https://github.com/mlfryman)
 
 ### License
-[MIT](LICENSE)
+- [MIT](LICENSE)
